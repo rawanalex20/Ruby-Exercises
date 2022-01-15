@@ -11,11 +11,7 @@ def progA
     print "c: "
     c = gets.to_i # assume user input is larger than b
 
-    if b - a == c - b
-        puts true
-    else
-        puts false
-    end
+    puts true if b - a == c - b
 end
 
 =begin
@@ -35,8 +31,6 @@ def progB
         puts true
     elsif (c - a).abs <= 1 && (b - a).abs >= 3 && (b - c).abs >= 3
         puts true
-    else
-        puts false
     end
 end
 
@@ -50,11 +44,7 @@ def progC
     print "b: "
     b = ((gets.to_i + 10) % 100).to_s
 
-    if a[0] == b[0] || a[0] == b[1] || a[1] == b[0] || a[1] == b[1]
-        puts true
-    else
-        puts false
-    end
+    puts true if a[0] == b[0] || a[0] == b[1] || a[1] == b[0] || a[1] == b[1]
 end
 
 =begin
@@ -97,11 +87,7 @@ F. Write a Ruby program that checks whether a string contains a vowel.
 def progF
     print "word: "
     a = gets
-    if a.match(/[aeiou]/)
-        puts true
-    else
-        puts false
-    end
+    puts true if a.match(/[aeiou]/)
 end
 
 =begin
