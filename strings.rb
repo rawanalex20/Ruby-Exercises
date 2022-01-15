@@ -6,7 +6,7 @@ puts text
 name = "Rawan"
 text = text.sub("World", "\"#{name}\"")
 puts text
-text.insert(text.index("Ruby") + "Ruby".length, ",")
+text.insert(text.index("Ruby") + "Ruby".length, ",") # find "Ruby" and insert "," after it
 puts text
 text.insert(text.index(",") + 1, "\t")
 puts text
