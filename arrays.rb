@@ -29,7 +29,7 @@ c. Count #=>5
 d. Sum #=> 15
 e. Multiplication of all elements #=> 120
 =end
-def prog1
+def progA
     print "number of elements: "
     n = gets.to_i
     arr = get_array(n)
@@ -48,7 +48,7 @@ end
 
 
 # B. Write a Ruby program to check whether a value exists in an array using array APIs.
-def prog2
+def progB
     print "number of elements: "
     n = gets.to_i
     arr = get_array(n)
@@ -66,7 +66,7 @@ end
 C. Write a ruby program that gets the count of each element in the array.ex: if
 a=[1,1,2,2,3,3,3] the output will be result=[[1,2],[2,2],[3,3]]
 =end
-def prog3
+def progC
     print "number of elements: "
     n = gets.to_i
     arr = get_array(n)
@@ -88,7 +88,7 @@ end
 D. Write two Ruby programs to compute the sum of elements in a given array of integers
 using iterators/reducers
 =end
-def prog4
+def progD
     print "number of elements: "
     n = gets.to_i
     arr = get_array(n)
@@ -104,7 +104,7 @@ end
 
 
 # E. Write a Ruby program to remove duplicate elements from a given array using array APIs.
-def prog5
+def progE
     print "number of elements: "
     n = gets.to_i
     arr = get_array(n)
@@ -117,7 +117,7 @@ end
 F. Write a Ruby program to create a new array of length 2 containing the middle two
 elements from a given array of integers of even length 2 or more using arrays APIs
 =end
-def prog6
+def progF
     n = 0
     while true
         print "number of elements: "
@@ -142,7 +142,7 @@ end
 G. Write a Ruby program to find the largest value from a given array of integers of odd
 length. The array length will be a least 1 using array APIs.
 =end
-def prog7
+def progG
     n = 0
     while true
         print "number of elements: "
@@ -166,7 +166,7 @@ H. Write a Ruby program to compute the sum of the numbers of a given array excep
 number 17 and numbers that come immediately after a 17. Return 0 for an empty array
 using array APIs.
 =end
-def prog8
+def progH
     print "number of elements: "
     n = gets.to_i
     arr = get_array(n)
@@ -181,7 +181,7 @@ end
 
 
 # I. Write a Ruby program to check whether all items are identical in a given array using array APIs.
-def prog9
+def progI
     print "number of elements: "
     n = gets.to_i
     arr = get_array(n)
@@ -208,7 +208,7 @@ AD
 BE
 CF
 =end
-def prog10
+def progJ
     print "number of rows: "
     rows = gets.to_i
     print "number of columns: "
