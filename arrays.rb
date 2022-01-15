@@ -189,7 +189,7 @@ def progI
         puts true
     else
         for i in 1..arr.count - 1
-            if arr[i] != arr[i - 1]
+            unless arr[i] == arr[i - 1]
                 puts false
                 break
             end
