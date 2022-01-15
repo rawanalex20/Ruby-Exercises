@@ -3,7 +3,7 @@ x = 1
 # A. Print out the binary presentation of 1
 puts x.to_s(2)
 
-# B. Print out whether it’s even or odd
+# B. Print out whether it's even or odd
 if x.even?
     puts "even"
 else
@@ -20,14 +20,14 @@ x /= 2
 puts x
 
 # E. Add 1/1/4, print the result
-x += 5 / 4
+x += Rational("5/4")
 puts x
 
 # F. print the numerator and denominator of result
 puts "Numerator: #{x.numerator.to_s}"
 puts "Denomerator: #{x.denominator.to_s}"
 
-# G. Multiply by ⅓ , print the result
+# G. Multiply by 1/3 , print the result
 x = x * 1 / 3
 puts x
 
