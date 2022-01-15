@@ -3,7 +3,7 @@ A. Write a Ruby program to check three given integers (a:smallest,b,c:largest) a
 true if the three values are equally spaced, so the difference between a and b is the
 same as the difference between b and c.
 =end
-def prog1
+def progA
     print "a: "
     a = gets.to_i
     print "b: "
@@ -23,7 +23,7 @@ B. Write a Ruby program to check three given integers a, b, c and return true if
 is close (difference out of a by at most 1), while the other is far, difference from both
 other values by 3 or more.
 =end
-def prog2
+def progB
     print "a : "
     a = gets.to_i
     print "b : "
@@ -44,7 +44,7 @@ end
 C. Write a Ruby program to check two given integers, each in the range 10..99, return true
 if there is a digit that appears in both numbers.
 =end
-def prog3
+def progC
     print "a: "
     a = ((gets.to_i + 10) % 100).to_s
     print "b: "
@@ -61,7 +61,7 @@ end
 D. Write a Ruby program to check two given integers and return true if either one is 11 or
 their sum or difference is 11 otherwise return false.
 =end
-def prog4
+def progD
     print "first num : "
     a = gets.to_i
     print "second num : "
@@ -78,7 +78,7 @@ end
 E. Write a Ruby program to check whether 2 strings start and end with
 different letters and both of them doesn't include letter "x".
 =end
-def prog5
+def progE
     print "first word : "
     a = gets
     print "second word : "
@@ -94,7 +94,7 @@ end
 =begin
 F. Write a Ruby program that checks whether a string contains a vowel.
 =end
-def prog6
+def progF
     print "word: "
     a = gets
     if a.match(/[aeiou]/)
@@ -117,7 +117,7 @@ Your program shall print out the corresponding evaluation as follows:
 80-90:excellent
 90-100:incredible
 =end
-def prog7
+def progG
     print "score: "
     while (a = gets.to_i) do
         if a > -1 && a <= 100
