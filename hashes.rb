@@ -88,7 +88,7 @@ end
 def progA7(hash)
     uniq_hash = {}
     hash.each do |key, value|
-        if !uniq_hash.has_value?(value)
+        unless uniq_hash.has_value?(value)
             uniq_hash[key] = value
         end
     end
