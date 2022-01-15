@@ -39,10 +39,29 @@ C. Write a Ruby program to check two given integers, each in the range 10..99, r
 if there is a digit that appears in both numbers.
 =end
 def progC
-    print "a: "
-    a = ((gets.to_i + 10) % 100).to_s
-    print "b: "
-    b = ((gets.to_i + 10) % 100).to_s
+    a = 0
+    b = 0
+    puts "Enter 2 integers between 10 and 99"
+    while true
+        print "a: "
+        a = gets.to_i
+        if a < 10
+            puts "less than 10"
+        elsif a > 99
+            puts "more than 99"
+        else
+            break
+        end
+    end
+    while true
+        print "b: "
+        b = gets.to_i
+        if b < 10
+            puts "less than 10"
+        elsif b > 99
+            puts "more than 99"
+        else
+            break
 
     puts true if a[0] == b[0] || a[0] == b[1] || a[1] == b[0] || a[1] == b[1]
 end
@@ -74,7 +93,7 @@ def progE
     print "second word : "
     b = gets
 
-    if a[0] != a[a.length - 2] && a[0] != a[a.length - 2] && a.count("x") == 0 && b.count("x") == 0
+    if a[0] != b[0] && a[a.length - 2] != b[a.length - 2] && a.count("x") == 0 && b.count("x") == 0
         puts true
     else
         puts false
