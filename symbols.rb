@@ -13,7 +13,9 @@ puts symbol.next
 puts symbol.to_s.gsub(/[^0-9A-Za-z]/, '').length
 
 # E. Prints out the symbol capitalized then return it back to its original case
-puts symbol.capitalize
+symbol = symbol.capitalize
+puts symbol
+symbol = symbol.downcase
 puts symbol
 
 # F. Print out the symbol converted to string, then print it back as symbol
