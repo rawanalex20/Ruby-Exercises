@@ -215,17 +215,7 @@ def progJ
     cols = gets.to_i
     arr = get_2d_array(rows, col)
     # arr = [['a', 'b', 'c'], ['d', 'e', 'f']]
-    arr_transpose = []
-    if arr.count > 0
-        for i in 0..arr[0].count - 1
-            arr_transpose.append([])
-        end
-    end
-    for i in arr
-        for j in 0..i.count - 1
-            arr_transpose[j].append(i[j])
-        end
-    end
+    arr_transpose = arr.transpose
     puts arr_transpose
 end
 
