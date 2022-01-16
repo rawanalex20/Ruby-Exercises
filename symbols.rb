@@ -17,7 +17,9 @@ puts symbol.capitalize
 puts symbol
 
 # F. Print out the symbol converted to string, then print it back as symbol
-puts symbol.to_s
+symbol = symbol.to_s
+puts symbol
+symbol = symbol.to_sym
 puts symbol
 
 # G. Create prints an array of symbols out of each letter ex: arr=[:w,:e,:l,:c,:m,:o,....]
