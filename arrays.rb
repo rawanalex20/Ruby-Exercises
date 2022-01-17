@@ -99,7 +99,7 @@ def progD
     puts "1st prog"
     puts "sum: #{sum}"
     puts "2nd prog"
-    puts "sum: #{arr.collect.sum}"
+    puts "sum: #{arr.reduce() {|sum, n| sum + n}}"
 end
 
 
