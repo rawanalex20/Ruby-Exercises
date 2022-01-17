@@ -30,9 +30,10 @@ end
 # B. Print out the array elements except 5 and 6
 def progB_for(arr)
     for num in arr
-        if num != 5 && num != 6
-            p num
+        if num == 5 && num == 6
+            next
         end
+        p num
     end
 end
 
@@ -40,9 +41,11 @@ end
 def progB_while(arr)
     i = 0
     while i < arr.length
-        if arr[i] != 5 && arr[i] != 6
-            p arr[i]
+        if arr[i] == 5 && arr[i] == 6
+            i += 1
+            next
         end
+        p arr[i]
         i += 1
     end
 end
@@ -54,9 +57,11 @@ def progB_loop(arr)
         if i == arr.length
             break
         end
-        if arr[i] != 5 && arr[i] != 6
-            p arr[i]
+        if arr[i] == 5 && arr[i] == 6
+            i += 1
+            next
         end
+        p arr[i]
         i += 1
     end
 end
