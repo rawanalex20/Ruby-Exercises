@@ -74,10 +74,7 @@ def progC
     result = []
     uniq_arr.each{
         |num|
-        tmparr = []
-        tmparr.append(num)
-        tmparr.append(arr.count(num))
-        result.append(tmparr)
+        result.append([num, arr.count(num)])
     }
     puts "result: #{result}"
 end
@@ -220,4 +217,4 @@ end
 
 
 ### call method here
-
+progC()
