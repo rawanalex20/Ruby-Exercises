@@ -70,16 +70,15 @@ def progC
     print "number of elements: "
     n = gets.to_i
     arr = get_array(n)
-    count_arr = Array.new(arr.max) { |e| e = 0 }
-    arr.each do |i|
-        count_arr[i - 1] += 1
-    end
+    uniq_arr = arr.uniq
     result = []
-    for i in 0..arr.max - 1
-        if count_arr[i] > 0
-            result.append([i + 1, count_arr[i]])
-        end
-    end
+    uniq_arr.each{
+        |num|
+        tmparr = []
+        tmparr.append(num)
+        tmparr.append(arr.count(num))
+        result.append(tmparr)
+    }
     puts "result: #{result}"
 end
 
