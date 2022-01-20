@@ -2,7 +2,7 @@ text = "Hello Ruby World"
 
 # A. Remove "Hello" , print the text
 # text = text.slice("Hello".length, text.length - 1) # return characters after "Hello" (old way)
-text["Hello"] = ''
+text["Hello"] = '' # modified way
 puts text
 
 # B. Add "Welcome to" to the beginning, print the text
